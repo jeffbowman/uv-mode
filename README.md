@@ -51,8 +51,14 @@ UV Mode works automatically once installed. Simply open a Python file in a proje
 
 While automatic activation is the primary way to use UV Mode, you can also control it manually:
 
-- `C-c C-s`: Manually activate the virtual environment for the current project
-- `C-c C-u`: Deactivate the current virtual environment
+You can bind the commands `uv-mode-set` and `uv-mode-unset`, for example:
+
+```elisp
+;; Manually activate the virtual environment for the current project
+(define-key uv-mode-map (kbd "C-c C-s") #'uv-mode-set)
+;; Deactivate the current virtual environment
+(define-key uv-mode-map (kbd "C-c C-u") #'uv-mode-unset)
+```
 
 ### Mode Line Indicator
 
