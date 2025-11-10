@@ -90,6 +90,7 @@ This looks for a .venv directory in the project root."
 (define-minor-mode uv-mode
   "Minor mode for uv virtualenv interaction.
 \\{uv-mode-map}"
+  :global t
   :lighter ""
   :keymap uv-mode-map
   (if uv-mode
