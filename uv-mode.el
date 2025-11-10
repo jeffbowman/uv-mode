@@ -83,11 +83,7 @@ This looks for a .venv directory in the project root."
   (setenv "VIRTUAL_ENV")
   (force-mode-line-update))
 
-(defvar uv-mode-map
-  (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-c C-s") 'uv-mode-set)
-    (define-key map (kbd "C-c C-u") 'uv-mode-unset)
-    map)
+(defvar uv-mode-map (make-sparse-keymap)
   "Keymap for `uv-mode'.")
 
 ;;;###autoload
